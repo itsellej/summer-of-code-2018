@@ -27,7 +27,7 @@
 
 
 #3. Deaf grandma extended, part 1
-#Grandma shouts different numbers, and doesn't stop talking until you say bye
+#Grandma shouts different numbers, and doesn't stop talking until you say BYE
 
 # from random import randint
 #
@@ -48,51 +48,45 @@
 #4. Deaf grandma extended, part 2
 #Grandma keeps talking until you say "BYE" three times in a row
 
-from random import randint
-
-bye_count = 0
-talk = input("What would you like to say to Grandma? ")
-
-while bye_count < 3:
-    if talk == talk.upper() and talk !="BYE":
-        random_number = randint(1930, 1950)
-        print(f"NO, NOT SINCE {random_number}")
-        bye_count = 0
-
-    elif talk == "BYE":
-        bye_count += 1
-
-        if bye_count != 3:
-            print("HUH?! SPEAK UP, GIRL")
-        else:
-            print("GOODBYE DEAR")
-            break
-
-    else:
-        print("STOP WHISPERING, GIRL!")
-        bye_count = 0
-
-    talk = input("What would you like to say to Grandma? ")
-
-
-
-
-# while talk != "BYE":
-#     bye_count = 0
-#     if talk == talk.upper():
+# from random import randint
+#
+# bye_count = 0
+# talk = input("What would you like to say to Grandma? ")
+#
+# while bye_count < 3:
+#     if talk == talk.upper() and talk !="BYE":
 #         random_number = randint(1930, 1950)
 #         print(f"NO, NOT SINCE {random_number}")
-#         talk = input("What would you like to say to Grandma? ")
+#         bye_count = 0
+#
+#     elif talk == "BYE":
+#         bye_count += 1
+#
+#         if bye_count != 3:
+#             print("HUH?! SPEAK UP, GIRL")
+#         else:
+#             print("GOODBYE DEAR")
+#             break
+#
 #     else:
 #         print("STOP WHISPERING, GIRL!")
-#         talk = input("What would you like to say to Grandma? ")
+#         bye_count = 0
 #
-# while talk == "BYE":
-#     bye_count +=1
-#     if bye_count != 3:
-#         print("HUH?! SPEAK UP, GIRL")
-#         talk = input("What would you like to say to Grandma? ")
-#
-#     else:
-#         print("GOODBYE DEAR. SEE YOU SOON")
-#         break
+#     talk = input("What would you like to say to Grandma? ")
+
+
+#5 Leap years
+
+start_year = int(input("What's your start year? "))
+end_year = int(input("What's your end year? "))
+
+print(f"Here are the leap years between {start_year} and {end_year}")
+
+while start_year <= end_year:
+    if start_year % 4 == 0 and start_year % 100 != 0:
+        print(start_year)
+
+    elif start_year % 400 == 0:
+        print(start_year)
+
+    start_year += 1
