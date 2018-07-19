@@ -17,10 +17,28 @@
 
 #Deaf grandma
 
+# talk = input("What would you like to say to Grandma? ")
+#
+# while talk != talk.upper():
+#     print("HUH? SPEAK UP, GIRL!")
+#     talk = input("What would you like to say to Grandma? ")
+#
+# print("NO, NOT SINCE 1938!")
+
+
+#Deaf grandma extended
+
+from random import randint
+
 talk = input("What would you like to say to Grandma? ")
 
-while talk != talk.upper():
-    print("HUH? SPEAK UP, GIRL!")
+while talk != "BYE":
+    if talk == talk.upper():
+        random_number = randint(1930, 1950)
+        print(f"NO, NOT SINCE {random_number}")
+    else:
+        print("HUH?! SPEAK UP, GIRL")
+
     talk = input("What would you like to say to Grandma? ")
 
-print("NO, NOT SINCE 1938!")
+print("GOODBYE DEAR. SEE YOU SOON")
