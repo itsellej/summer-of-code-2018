@@ -77,16 +77,35 @@
 
 #5 Leap years
 
-start_year = int(input("What's your start year? "))
-end_year = int(input("What's your end year? "))
+# start_year = int(input("What's your start year? "))
+# end_year = int(input("What's your end year? "))
+#
+# print(f"Here are the leap years between {start_year} and {end_year}")
+#
+# while start_year <= end_year:
+#     if start_year % 4 == 0 and start_year % 100 != 0:
+#         print(start_year)
+#
+#     elif start_year % 400 == 0:
+#         print(start_year)
+#
+#     start_year += 1
 
-print(f"Here are the leap years between {start_year} and {end_year}")
 
-while start_year <= end_year:
-    if start_year % 4 == 0 and start_year % 100 != 0:
-        print(start_year)
+#6 books by bookshelf or leaves on tree - TBC
 
-    elif start_year % 400 == 0:
-        print(start_year)
 
-    start_year += 1
+#7 Building and sorting a list
+
+list = []
+word = input("Please enter a word: ")
+
+while len(list) < 2:
+    if len(word) == 0:
+        word = input("You have less than two items in your list. Please add a word: ")
+    else:
+        while len(word) != 0:
+            list.append(word)
+            word = input("Please add another word to your list: ")
+
+print(f"Here is your sorted list: {sorted(list)}")
