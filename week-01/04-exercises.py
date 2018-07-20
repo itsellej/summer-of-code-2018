@@ -129,4 +129,8 @@ print(contents[4].ljust(half_line_width) + contents[5].rjust(half_line_width))
 #9 Moo function
 
 def moo (n):
-    "moo" * n
+    big_moo = "moo " * n
+    print(big_moo)
+
+#test
+moo (5)
