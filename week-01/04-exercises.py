@@ -92,20 +92,41 @@
 #     start_year += 1
 
 
-#6 books by bookshelf or leaves on tree - TBC
+#6 daily life calculation - amount of people on the tube
+
+# people_in_carriage = int(input("How many people are in your carriage? "))
+# number_of_carriages = int(input("How many carriages are there? "))
+# print(f"There are approximately {people_in_carriage * number_of_carriages} people on this train")
 
 
 #7 Building and sorting a list
 
-list = []
-word = input("Please enter a word: ")
+# list = []
+# word = input("Please enter a word: ")
+#
+# while len(list) < 2:
+#     if len(word) == 0:
+#         word = input("You have less than two items in your list. Please add a word: ")
+#     else:
+#         while len(word) != 0:
+#             list.append(word)
+#             word = input("Please add another word to your list: ")
+#
+# print(f"Here is your sorted list: {sorted(list)}")
 
-while len(list) < 2:
-    if len(word) == 0:
-        word = input("You have less than two items in your list. Please add a word: ")
-    else:
-        while len(word) != 0:
-            list.append(word)
-            word = input("Please add another word to your list: ")
 
-print(f"Here is your sorted list: {sorted(list)}")
+#8. Table of contents, revisited
+
+contents = ["Chapter 1: Getting Started", "page 1", "Chapter 2: Numbers", "page 9", "Chapter 3: Letters", "page 13"]
+
+line_width = 60
+half_line_width = int(line_width / 2)
+
+print(contents[0].ljust(half_line_width) + contents[1].rjust(half_line_width))
+print(contents[2].ljust(half_line_width) + contents[3].rjust(half_line_width))
+print(contents[4].ljust(half_line_width) + contents[5].rjust(half_line_width))
+
+#9 Moo function
+
+def moo (n):
+    "moo" * n
