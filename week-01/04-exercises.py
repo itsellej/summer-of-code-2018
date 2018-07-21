@@ -126,6 +126,7 @@ print(contents[0].ljust(half_line_width) + contents[1].rjust(half_line_width))
 print(contents[2].ljust(half_line_width) + contents[3].rjust(half_line_width))
 print(contents[4].ljust(half_line_width) + contents[5].rjust(half_line_width))
 
+
 #9 Moo function
 
 def moo (n):
@@ -134,3 +135,10 @@ def moo (n):
 
 #test
 moo (5)
+moo (10)
+moo (44)
+
+
+#10 Old-school Roman numerals
+
+#Advanced question, which I will revisit when I have more Python and programming knowledge :)
