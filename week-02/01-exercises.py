@@ -1,8 +1,7 @@
-#Separating upper and lower case
 
 def count_letters(filename):
 
-    #open file and read fuke
+    #open file and read file
     file = open(filename, "r")
     read_book = file.read()
 
@@ -19,7 +18,7 @@ def count_letters(filename):
 
     file.close()
 
-    
+
 count_letters("01-test2.txt")
 count_letters("01-test.txt")
 
