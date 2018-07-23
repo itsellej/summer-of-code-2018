@@ -5,7 +5,7 @@ print("WEEK 1, DAY 1 EXERCISES:")
 
 seconds = 60
 minutes = 60
-hours = 24
+hours = 24 
 
 #Q1. How many hours are in a year?
 hours_year = hours * 365 #Answer: 8760
