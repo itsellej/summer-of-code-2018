@@ -11,16 +11,24 @@ def count_letters(filename):
     characters = Counter(read_book)
 
     #sort the dictionary by key
-    # if the key is alphabetic, print key value pair
-    for key, value in sorted(characters.items()):
+    # if the key is alphabetic, add key : value pair to chars dictionary
+    chars = {}
+
+    for key, value in characters.items():
         if key.isalpha():
-            print(key, value)
+            # print(key, value)
+            chars.update({key : value})
+
+
+    # add value of same letter lower and upper case keys to create total as lower case key
+    chars_condensed =  {k.lower(): v for k, v in chars.items()}
+
+    #sort alphabetically by key and print key value pairs
+    for key, value in sorted(chars_condensed.items()):
+        print(f"{key}: {value}")
 
     file.close()
 
 
 count_letters("01-test2.txt")
 count_letters("01-test.txt")
-
-
-#Condensing total of all letters (upper and lower case)
