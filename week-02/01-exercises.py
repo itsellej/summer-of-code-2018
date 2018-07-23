@@ -1,3 +1,5 @@
+#Separating upper and lower case
+
 def count_letters(filename):
 
     #open file and read fuke
@@ -15,5 +17,11 @@ def count_letters(filename):
         if key.isalpha():
             print(key, value)
 
+    file.close()
+
+    
 count_letters("01-test2.txt")
 count_letters("01-test.txt")
+
+
+#Condensing total of all letters (upper and lower case)
