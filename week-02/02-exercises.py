@@ -18,19 +18,18 @@
 
 def cypher(message):
     letters = list(message)
-    print(letters)
 
     decoded = []
     for i in letters:
-    #     if i == " ":
-    #         decoded.append(" ")
-    # else:
         decoded.append(ord(i))
 
+    for n, i in enumerate(decoded):
+        if i == 32:
+            decoded[n] = " "
 
     print(decoded)
 
-#test 
+#test
 cypher("I LOVE YOU")
-
-#4. Optional - caeser cypher
+cypher("A B C D E")
+cypher("Elle J")
