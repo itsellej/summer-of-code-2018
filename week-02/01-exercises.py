@@ -30,5 +30,6 @@ def count_letters(filename):
     file.close()
 
 
-count_letters("01-test2.txt")
-count_letters("01-test.txt")
+# count_letters("01-test2.txt")
+# count_letters("01-test.txt")
+count_letters("01-alice_in_wonderland.txt")
