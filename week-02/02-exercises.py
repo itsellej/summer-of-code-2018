@@ -14,22 +14,46 @@
 # #test
 # alpha()
 
-#3. Make a function that asks the user for a message, and turns it into a list of numbers. (It's a cypher )
+# #3. Make a function that asks the user for a message, and turns it into a list of numbers. (It's a cypher )
+#
+# def cypher(message):
+#     letters = list(message)
+#
+#     decoded = []
+#     for i in letters:
+#         decoded.append(ord(i))
+#
+#     for n, i in enumerate(decoded):
+#         if i == 32:
+#             decoded[n] = " "
+#
+#     print(decoded)
+#
+# #test
+# cypher("I LOVE YOU")
+# cypher("A B C D E")
+# cypher("Elle J")
 
-def cypher(message):
-    letters = list(message)
 
-    decoded = []
-    for i in letters:
-        decoded.append(ord(i))
+#4. Print out all elements of the board using a function
 
-    for n, i in enumerate(decoded):
-        if i == 32:
-            decoded[n] = " "
+M = "M"
+o = "o"
+world = [[o,o,o,o,o,o,o,o,o,o,o],
+ [o,o,o,o,M,M,o,o,o,o,o],
+ [o,o,o,o,o,o,o,o,M,M,o],
+ [o,o,o,M,o,o,o,o,o,M,o],
+ [o,o,o,M,o,M,M,o,o,o,o],
+ [o,o,o,o,M,M,M,M,o,o,o],
+ [o,o,o,M,M,M,M,M,M,M,o],
+ [o,o,o,M,M,o,M,M,M,o,o],
+ [o,o,o,o,o,o,M,M,o,o,o],
+ [o,M,o,o,o,M,o,o,o,o,o],
+ [o,o,o,o,o,o,o,o,o,o,o]]
 
-    print(decoded)
+def print_board(board):
+    for i in board:
+        for x in i:
+            print(x, end=" ")
 
-#test
-cypher("I LOVE YOU")
-cypher("A B C D E")
-cypher("Elle J")
+print_board(world)
