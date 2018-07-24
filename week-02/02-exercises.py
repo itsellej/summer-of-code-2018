@@ -30,7 +30,7 @@ def cypher(message):
 
     print(decoded)
 
-#test
+#test 
 cypher("I LOVE YOU")
 
 #4. Optional - caeser cypher
