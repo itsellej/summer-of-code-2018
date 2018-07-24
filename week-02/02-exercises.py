@@ -57,3 +57,13 @@ def print_board(board):
             print(x, end=" ")
 
 print_board(world)
+
+
+#5. Print out all elements of the board using a function in reverse
+
+def print_board(board):
+    for i in board:
+        for x in reversed(i):
+            print(x, end=" ")
+
+print_board(world)
