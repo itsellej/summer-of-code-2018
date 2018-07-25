@@ -87,31 +87,14 @@ def board_creator(row, col):
     board = []
 
     for item in structure:
-        row = []
+        rowlist = []
         for i in item:
             item = random.choice([M, o])
-            row.append(item)
-        board.append(row)
+            rowlist.append(item)
+        board.append(rowlist)
 
     print(board)
 
 #Test
-board_creator(4, 4)
-board_creator(2, 6)
-
-
-
-
-
-
-
-
-
-# import random
-# from string import ascii_uppercase
-# grid={}
-# for x in range(4):
-#         for y in range(4):
-#             grid[x,y]=random.choice(ascii_uppercase)
-#
-# print(grid)
+board_creator(3, 3)
+#board_creator(2, 6)
