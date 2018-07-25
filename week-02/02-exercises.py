@@ -35,35 +35,83 @@
 # cypher("Elle J")
 
 
-#4. Print out all elements of the board using a function
-
+# #4. Print out all elements of the board using a function
+#
 M = "M"
 o = "o"
-world = [[o,o,o,o,o,o,o,o,o,o,o],
- [o,o,o,o,M,M,o,o,o,o,o],
- [o,o,o,o,o,o,o,o,M,M,o],
- [o,o,o,M,o,o,o,o,o,M,o],
- [o,o,o,M,o,M,M,o,o,o,o],
- [o,o,o,o,M,M,M,M,o,o,o],
- [o,o,o,M,M,M,M,M,M,M,o],
- [o,o,o,M,M,o,M,M,M,o,o],
- [o,o,o,o,o,o,M,M,o,o,o],
- [o,M,o,o,o,M,o,o,o,o,o],
- [o,o,o,o,o,o,o,o,o,o,o]]
+# world = [[o,o,o,o,o,o,o,o,o,o,o],
+#  [o,o,o,o,M,M,o,o,o,o,o],
+#  [o,o,o,o,o,o,o,o,M,M,o],
+#  [o,o,o,M,o,o,o,o,o,M,o],
+#  [o,o,o,M,o,M,M,o,o,o,o],
+#  [o,o,o,o,M,M,M,M,o,o,o],
+#  [o,o,o,M,M,M,M,M,M,M,o],
+#  [o,o,o,M,M,o,M,M,M,o,o],
+#  [o,o,o,o,o,o,M,M,o,o,o],
+#  [o,M,o,o,o,M,o,o,o,o,o],
+#  [o,o,o,o,o,o,o,o,o,o,o]]
+#
+# def print_board(board):
+#     for i in board:
+#         for x in i:
+#             print(x, end=" ")
+#
+# print_board(world)
+#
+#
+# #5. Print out all elements of the board using a function in reverse
+#
+# def print_board(board):
+#     for i in board:
+#         for x in reversed(i):
+#             print(x, end=" ")
+#
+# print_board(world)
 
-def print_board(board):
-    for i in board:
-        for x in i:
-            print(x, end=" ")
 
-print_board(world)
+#6. Fix the continent counter bug
 
 
-#5. Print out all elements of the board using a function in reverse
+#7. Write a function that generates an n x n sized board with either land or water chosen randomly.
 
-def print_board(board):
-    for i in board:
-        for x in reversed(i):
-            print(x, end=" ")
 
-print_board(world)
+def board_creator(row, col):
+    import random
+
+    structure = []
+
+    for x in range(0, row):
+        structure.append(["x"] * col)
+    # print(structure)
+
+    board = []
+
+    for item in structure:
+        row = []
+        for i in item:
+            item = random.choice([M, o])
+            row.append(item)
+        board.append(row)
+
+    print(board)
+
+#Test
+board_creator(4, 4)
+board_creator(2, 6)
+
+
+
+
+
+
+
+
+
+# import random
+# from string import ascii_uppercase
+# grid={}
+# for x in range(4):
+#         for y in range(4):
+#             grid[x,y]=random.choice(ascii_uppercase)
+#
+# print(grid)
