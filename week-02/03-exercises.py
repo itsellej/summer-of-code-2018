@@ -44,31 +44,57 @@
 
 #4. Review the chat reply of today's beautiful class interaction and instantiate a student variable for everyone who shared their dream.
 
+# class Student():
+#
+#     def __init__(self, name, fav_food, dream):
+#         self.name = name
+#         self.fav_food = fav_food
+#         self.dream = dream
+#
+#     def s_print(self):
+#         return self.name + ", " + self.fav_food + ", " + self.dream
+#
+# s1 = Student("Virginia Balseiro", "pasta", "moving to Europe")
+# s2 = Student("Deb Cupitt", "chocolate", "gender equality")
+# s3 = Student("Sacha Young", "french fries", "to return to research")
+# s4 = Student("Jessi RS", "pasta", "work as a developer")
+# s5 = Student("Bituin Callanta", "sashimi", "lessen the gender wage gap")
+#
+# #test
+# print(s1.name)
+# print(s2.fav_food)
+# print(s3.dream)
+# print(s4.fav_food)
+# print(s5.name)
+#
+# print(s1.s_print())
+# print(s2.s_print())
+# print(s3.s_print())
+# print(s4.s_print())
+# print(s5.s_print())
+
+
+#5. Translate the real world 1MWTT student into a Student class, decide on all the attributes that would be meaningful.
+
 class Student():
-
-    def __init__(self, name, fav_food, dream):
-        self.name = name
-        self.fav_food = fav_food
-        self.dream = dream
-
-    def s_print(self):
-        return self.name + ", " + self.fav_food + ", " + self.dream
-
-s1 = Student("Virginia Balseiro", "pasta", "moving to Europe")
-s2 = Student("Deb Cupitt", "chocolate", "gender equality")
-s3 = Student("Sacha Young", "french fries", "to return to research")
-s4 = Student("Jessi RS", "pasta", "work as a developer")
-s5 = Student("Bituin Callanta", "sashimi", "lessen the gender wage gap")
+    def __init__(self, firstname, lastname, email, date_of_birth,identify_as, country, country_code, phone_number, github, discord_id, coding_level, goal):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.email = email
+        self.identify_as = identify_as
+        self.date_of_birth = date_of_birth
+        self.country = country
+        self.country_code = country_code
+        self.phone_number = phone_number
+        self.github = github
+        self.discord_id = discord_id
+        self.coding_level = coding_level
+        self.goal = goal
 
 #test
-print(s1.name)
-print(s2.fav_food)
-print(s3.dream)
-print(s4.fav_food)
-print(s5.name)
 
-print(s1.s_print())
-print(s2.s_print())
-print(s3.s_print())
-print(s4.s_print())
-print(s5.s_print())
+s1 = Student("elle", "J", "test@test.com", "25th May", "female", "UK", "+44", "00000000000", "itsellej", "elle#6498", "beginner", "to become a developer")
+
+print(s1.identify_as)
+print(s1.github)
+print(s1.discord_id)
