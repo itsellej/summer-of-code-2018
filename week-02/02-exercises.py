@@ -82,7 +82,6 @@ def board_creator(row, col):
 
     for x in range(0, row):
         structure.append(["x"] * col)
-    # print(structure)
 
     board = []
 
