@@ -14,6 +14,7 @@
 
 
 #2. Redo the frequency distribution of alice_in_wonderland.txt and save your result in a dictionary
+#Note - Already created a dictionary when doing the previous task. Please view Day 1, Q1
 
 
 # #3. Create a dictionary with your own personal details, feel free to be creative and funny so for example, you could include key-value pairs with quirky fact, fav quote, pet. Practice adding, modifying, accesing.
